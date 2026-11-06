@@ -9,8 +9,6 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
-import java.util.Optional;
-
 public class ScreeningController {
     @FXML
     private TableView<Screening> screeningTable;
@@ -22,8 +20,6 @@ public class ScreeningController {
     private TableColumn<Screening, String> timeColumn;
     @FXML
     private TableColumn<Screening, Integer> freeSeatsColumn;
-    @FXML
-    private TextField searchTitleTextField;
 
     private ScreeningService screeningService = new ScreeningService();
 

@@ -2,7 +2,6 @@ package com.cramer._551_kv_kinovorstellungen.model;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 public class ScreeningService {
 
