@@ -24,12 +24,6 @@
                   <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#showAvailableScreenings" text="Freie Vorstellungen anzeigen" HBox.hgrow="ALWAYS" />
                </children>
             </HBox>
-            <HBox prefHeight="14.0" prefWidth="539.0" spacing="10.0">
-               <children>
-                  <TextField fx:id="searchTitleTextField" prefHeight="26.0" prefWidth="362.0" HBox.hgrow="ALWAYS" />
-                  <Button mnemonicParsing="false" onAction="#searchTitle" text="Tittel suchen" />
-               </children>
-            </HBox>
             <TableView fx:id="screeningTable" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
               <columns>
                 <TableColumn fx:id="nameColumn" prefWidth="200.0" text="Titel" />

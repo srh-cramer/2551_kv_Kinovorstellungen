@@ -12,7 +12,7 @@ public class ScreeningApplication extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(ScreeningApplication.class.getResource("screening-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 400);
-        stage.setTitle("TODO");
+        stage.setTitle("Kinoprogramm");
         stage.setScene(scene);
         stage.show();
     }

@@ -33,7 +33,7 @@ public class ScreeningController {
                 data -> new SimpleStringProperty(data.getValue().title())
         );
         roomColumn.setCellValueFactory(
-                data -> new SimpleStringProperty(data.getValue().room().toString())
+                data -> new SimpleStringProperty(data.getValue().room())
         );
         timeColumn.setCellValueFactory(
                 data -> new SimpleStringProperty(data.getValue().time())
@@ -54,18 +54,7 @@ public class ScreeningController {
     @FXML
     private void showAvailableScreenings(){
         // TODO: Aufgabe 1
-        screeningTable.getItems().clear();
-        screeningTable.getItems().addAll(screeningService.getAvailableScreenings());
     }
 
-    @FXML
-    private void searchTitle(){
-        String title = searchTitleTextField.getText();
-        Optional<Screening> screening = screeningService.getScreeningByTitle(title);
-        if (screening.isEmpty()){
-            return;
-        }
-        screeningTable.getItems().clear();
-        screeningTable.getItems().add(screening.get());
-    }
+    // TODO: Aufgabe 2
 }
